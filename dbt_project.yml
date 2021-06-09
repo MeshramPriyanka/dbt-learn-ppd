@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: dbt-learn-ppd
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF001
+
+    tables:
+      - name: orders
+        loaded_at_field: updated_at # override source defaults
+        columns:
+          - name: customer_id
+            tests:
+              - unique
+
+          - name: order_id
+            tests:
+              - not_null
+  
+      - name: customers
+        loaded_at_field: true # override source defaults
+        columns:
+          - name: customer_id
+            tests:
+              - unique         
