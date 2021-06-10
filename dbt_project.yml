@@ -1,25 +1,39 @@
-version: 2
+name: dbt-learn-ppd
 
-sources:
-  - name: dbt-learn-ppd
-    database: SNOWFLAKE_SAMPLE_DATA
-    schema: TPCH_SF001
+version: "1.0.0"
 
-    tables:
-      - name: orders
-        loaded_at_field: updated_at # override source defaults
-        columns:
-          - name: customer_id
-            tests:
-              - unique
+profile: snowflake
 
-          - name: order_id
-            tests:
-              - not_null
-  
-      - name: customers
-        loaded_at_field: true # override source defaults
-        columns:
-          - name: customer_id
-            tests:
-              - unique         
+analysis-paths: ["analysis"]
+data-paths: ["assets"]
+test-paths: ["tests"]
+macro-paths: ["custom_macros"]
+snapshot-paths: ["archives"]
+docs-paths: ["docs"]
+
+target-path: "compiled"
+log-path: dbt_logs
+modules-path: packages
+
+clean-targets: [target, dbt_modules, logs]
+
+query-comment: string
+
+require-dbt-version: version-range | [version-range]
+
+quoting:
+  database: true | false
+  schema: true | false
+  identifier: true | false
+
+models:
+  <model-configs>
+
+seeds:
+  <seed-configs>
+
+snapshots:
+  <snapshot-configs>
+
+on-run-start: sql-statement | [sql-statement]
+on-run-end: sql-statement | [sql-statement]
