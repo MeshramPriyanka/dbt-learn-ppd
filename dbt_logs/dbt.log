@@ -3746,3 +3746,48 @@ dbt.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'Failed
 2021-06-10 09:14:44,875598 (Thread-47): handling status request
 2021-06-10 09:14:44,876076 (Thread-47): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9101be4c0>]}
 2021-06-10 09:14:44,990555 (Thread-47): sending response (<Response 2039 bytes [200 OK]>) to 10.0.17.221
+2021-06-10 09:14:48,578938 (Thread-48): Acquiring new snowflake connection "model.SNOWFLAKE_SAMPLE_DATA.stg_customers".
+2021-06-10 09:14:48,579098 (Thread-48): Opening a new connection, currently in state init
+2021-06-10 09:14:48,586958 (Thread-48): Acquiring new snowflake connection "model.SNOWFLAKE_SAMPLE_DATA.stg_orders".
+2021-06-10 09:14:48,587086 (Thread-48): Opening a new connection, currently in state init
+2021-06-10 09:14:48,592697 (Thread-48): Acquiring new snowflake connection "model.SNOWFLAKE_SAMPLE_DATA.dim_customers".
+2021-06-10 09:14:48,592819 (Thread-48): Opening a new connection, currently in state init
+2021-06-10 09:14:48,612852 (Thread-48): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.unique_dim_customers_customer_id".
+2021-06-10 09:14:48,612961 (Thread-48): Opening a new connection, currently in state init
+2021-06-10 09:14:48,622139 (Thread-48): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.not_null_dim_customers_customer_id".
+2021-06-10 09:14:48,622264 (Thread-48): Opening a new connection, currently in state init
+2021-06-10 09:14:48,631025 (Thread-48): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.unique_stg_jaffle_shop__orders_order_id".
+2021-06-10 09:14:48,631130 (Thread-48): Opening a new connection, currently in state init
+2021-06-10 09:14:48,638037 (Thread-48): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.not_null_stg_jaffle_shop__orders_order_id".
+2021-06-10 09:14:48,638140 (Thread-48): Opening a new connection, currently in state init
+2021-06-10 09:14:48,645482 (Thread-48): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.accepted_values_stg_jaffle_shop__orders_status__placed__shipped__completed__return_pending__returned".
+2021-06-10 09:14:48,645585 (Thread-48): Opening a new connection, currently in state init
+2021-06-10 09:14:48,665751 (Thread-48): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.source_unique_SNOWFLAKE_SAMPLE_DATA_customers_customer_id".
+2021-06-10 09:14:48,665855 (Thread-48): Opening a new connection, currently in state init
+2021-06-10 09:14:48,672665 (Thread-48): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.source_not_null_SNOWFLAKE_SAMPLE_DATA_customers_customer_id".
+2021-06-10 09:14:48,672769 (Thread-48): Opening a new connection, currently in state init
+2021-06-10 09:14:48,681666 (Thread-48): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.source_unique_SNOWFLAKE_SAMPLE_DATA_orders_order_id".
+2021-06-10 09:14:48,681768 (Thread-48): Opening a new connection, currently in state init
+2021-06-10 09:14:48,688571 (Thread-48): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.source_not_null_SNOWFLAKE_SAMPLE_DATA_orders_order_id".
+2021-06-10 09:14:48,688680 (Thread-48): Opening a new connection, currently in state init
+2021-06-10 09:14:48,696598 (Thread-48): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.source_accepted_values_SNOWFLAKE_SAMPLE_DATA_orders_status__placed__shipped__completed__return_pending__returned".
+2021-06-10 09:14:48,696702 (Thread-48): Opening a new connection, currently in state init
+2021-06-10 09:14:48,728667 (Thread-48): WARNING: Found documentation for model "stg_jaffle_shop__orders" which was not found or is disabled
+2021-06-10 09:14:48,728941 (Thread-48): WARNING: Test 'test.SNOWFLAKE_SAMPLE_DATA.unique_stg_jaffle_shop__orders_order_id' (models/project.yml) depends on model 'stg_jaffle_shop__orders' which was not found
+2021-06-10 09:14:48,729262 (Thread-48): WARNING: Test 'test.SNOWFLAKE_SAMPLE_DATA.not_null_stg_jaffle_shop__orders_order_id' (models/project.yml) depends on model 'stg_jaffle_shop__orders' which was not found
+2021-06-10 09:14:48,729556 (Thread-48): WARNING: Test 'test.SNOWFLAKE_SAMPLE_DATA.accepted_values_stg_jaffle_shop__orders_status__placed__shipped__completed__return_pending__returned' (models/project.yml) depends on model 'stg_jaffle_shop__orders' which was not found
+2021-06-10 09:14:49,531657 (Thread-49): handling status request
+2021-06-10 09:14:49,532081 (Thread-49): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9100e7730>]}
+2021-06-10 09:14:49,586610 (Thread-50): handling status request
+2021-06-10 09:14:49,592334 (Thread-50): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe910083a30>]}
+2021-06-10 09:14:49,598006 (Thread-51): handling status request
+2021-06-10 09:14:49,603460 (Thread-51): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe910079250>]}
+2021-06-10 09:14:49,655794 (Thread-49): sending response (<Response 9902 bytes [200 OK]>) to 10.0.23.132
+2021-06-10 09:14:49,771798 (Thread-50): sending response (<Response 9902 bytes [200 OK]>) to 10.0.45.98
+2021-06-10 09:14:49,887600 (Thread-51): sending response (<Response 9902 bytes [200 OK]>) to 10.0.43.59
+2021-06-10 09:17:46,499145 (Thread-52): handling status request
+2021-06-10 09:17:46,500986 (Thread-52): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9101f3190>]}
+2021-06-10 09:17:46,617771 (Thread-52): sending response (<Response 9902 bytes [200 OK]>) to 10.0.4.151
+2021-06-10 09:17:55,230241 (Thread-53): handling status request
+2021-06-10 09:17:55,230676 (Thread-53): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9100988b0>]}
+2021-06-10 09:17:55,351004 (Thread-53): sending response (<Response 9902 bytes [200 OK]>) to 10.0.17.221
