@@ -1,25 +1,49 @@
 version: 2
 
 sources:
-  - name: dbt-learn-ppd
-    database: SNOWFLAKE_SAMPLE_DATA
-    schema: TPCH_SF001
-
+  - name: SNOWFLAKE_SAMPLE_DATA
+    description: A replica of the postgres database used to power the jaffle_shop app.
     tables:
-      - name: orders
-        loaded_at_field: updated_at # override source defaults
+      - name: customers
         columns:
           - name: customer_id
+            description: Primary key of the table
             tests:
               - unique
-
-          - name: order_id
-            tests:
               - not_null
-  
-      - name: customers
-        loaded_at_field: true # override source defaults
+
+      - name: orders
         columns:
-          - name: customer_id
+          - name: order_id
+            description: Primary key of the table
             tests:
-              - unique         
+              - unique
+              - not_null
+
+          - name: user_id
+            description: Foreign key to customers
+
+          - name: status
+            tests:
+              - accepted_values:
+                  values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
+
+
+models:
+  - name: dim_customers
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_jaffle_shop__orders
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']

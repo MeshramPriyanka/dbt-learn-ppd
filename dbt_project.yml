@@ -1,7 +1,6 @@
-name: dbt-learn-ppd
+name: "SNOWFLAKE_SAMPLE_DATA"
 
 version: "1.0.0"
-
 profile: snowflake
 
 analysis-paths: ["analysis"]
@@ -17,23 +16,11 @@ modules-path: packages
 
 clean-targets: [target, dbt_modules, logs]
 
-query-comment: string
-
-require-dbt-version: version-range | [version-range]
-
-quoting:
-  database: true | false
-  schema: true | false
-  identifier: true | false
-
 models:
-  <model-configs>
+    SNOWFLAKE_SAMPLE_DATA:
+        marts:
+            core:
+                +materialized: table
 
-seeds:
-  <seed-configs>
-
-snapshots:
-  <snapshot-configs>
-
-on-run-start: sql-statement | [sql-statement]
-on-run-end: sql-statement | [sql-statement]
+        staging:
+            +materialized: view        

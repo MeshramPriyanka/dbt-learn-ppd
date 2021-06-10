@@ -1,23 +1,12 @@
 with customers as (
 
-    select
-        C_CUSTKEY as customer_id,
-        C_NAME AS NAME
-
-    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF001.CUSTOMER
+    select * from {{ ref('stg_customers')}}
 
 ),
 
 orders as (
 
-    select
-        O_ORDERKEY as order_id,
-        O_CUSTKEY as customer_id,
-        O_ORDERDATE AS order_date,
-        O_ORDERSTATUS AS status
-
-    from SNOWFLAKE_SAMPLE_DATA.TPCH_SF001.ORDERS
-
+    select * from {{ ref('stg_orders') }}
 
 ),
 
