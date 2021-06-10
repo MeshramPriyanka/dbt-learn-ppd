@@ -3101,3 +3101,648 @@ dbt.exceptions.FailedToConnectException: Database Error
 2021-06-10 07:11:24,180879 (Thread-8): handling status request
 2021-06-10 07:11:24,181317 (Thread-8): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9113f8a30>]}
 2021-06-10 07:11:24,207676 (Thread-8): sending response (<Response 17046 bytes [200 OK]>) to 10.0.0.54
+2021-06-10 07:11:28,197230 (Thread-9): Acquiring new snowflake connection "model.SNOWFLAKE_SAMPLE_DATA.stg_customers".
+2021-06-10 07:11:28,197388 (Thread-9): Opening a new connection, currently in state init
+2021-06-10 07:11:28,205347 (Thread-9): Acquiring new snowflake connection "model.SNOWFLAKE_SAMPLE_DATA.stg_orders".
+2021-06-10 07:11:28,205465 (Thread-9): Opening a new connection, currently in state init
+2021-06-10 07:11:28,211499 (Thread-9): Acquiring new snowflake connection "model.SNOWFLAKE_SAMPLE_DATA.dim_customers".
+2021-06-10 07:11:28,211604 (Thread-9): Opening a new connection, currently in state init
+2021-06-10 07:11:28,231476 (Thread-9): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.unique_dim_customers_customer_id".
+2021-06-10 07:11:28,231581 (Thread-9): Opening a new connection, currently in state init
+2021-06-10 07:11:28,240155 (Thread-9): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.not_null_dim_customers_customer_id".
+2021-06-10 07:11:28,240260 (Thread-9): Opening a new connection, currently in state init
+2021-06-10 07:11:28,249000 (Thread-9): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.unique_stg_jaffle_shop__orders_order_id".
+2021-06-10 07:11:28,249104 (Thread-9): Opening a new connection, currently in state init
+2021-06-10 07:11:28,256578 (Thread-9): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.not_null_stg_jaffle_shop__orders_order_id".
+2021-06-10 07:11:28,256709 (Thread-9): Opening a new connection, currently in state init
+2021-06-10 07:11:28,266320 (Thread-9): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.accepted_values_stg_jaffle_shop__orders_status__placed__shipped__completed__return_pending__returned".
+2021-06-10 07:11:28,266426 (Thread-9): Opening a new connection, currently in state init
+2021-06-10 07:11:28,286578 (Thread-9): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.source_unique_SNOWFLAKE_SAMPLE_DATA_customers_customer_id".
+2021-06-10 07:11:28,286685 (Thread-9): Opening a new connection, currently in state init
+2021-06-10 07:11:28,293515 (Thread-9): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.source_not_null_SNOWFLAKE_SAMPLE_DATA_customers_customer_id".
+2021-06-10 07:11:28,293618 (Thread-9): Opening a new connection, currently in state init
+2021-06-10 07:11:28,303679 (Thread-9): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.source_unique_SNOWFLAKE_SAMPLE_DATA_orders_order_id".
+2021-06-10 07:11:28,303804 (Thread-9): Opening a new connection, currently in state init
+2021-06-10 07:11:28,312117 (Thread-9): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.source_not_null_SNOWFLAKE_SAMPLE_DATA_orders_order_id".
+2021-06-10 07:11:28,312258 (Thread-9): Opening a new connection, currently in state init
+2021-06-10 07:11:28,322210 (Thread-9): Acquiring new snowflake connection "test.SNOWFLAKE_SAMPLE_DATA.source_accepted_values_SNOWFLAKE_SAMPLE_DATA_orders_status__placed__shipped__completed__return_pending__returned".
+2021-06-10 07:11:28,322333 (Thread-9): Opening a new connection, currently in state init
+2021-06-10 07:11:28,355467 (Thread-9): WARNING: Found documentation for model "stg_jaffle_shop__orders" which was not found or is disabled
+2021-06-10 07:11:28,355743 (Thread-9): WARNING: Test 'test.SNOWFLAKE_SAMPLE_DATA.unique_stg_jaffle_shop__orders_order_id' (models/project.yml) depends on model 'stg_jaffle_shop__orders' which was not found
+2021-06-10 07:11:28,356078 (Thread-9): WARNING: Test 'test.SNOWFLAKE_SAMPLE_DATA.not_null_stg_jaffle_shop__orders_order_id' (models/project.yml) depends on model 'stg_jaffle_shop__orders' which was not found
+2021-06-10 07:11:28,356352 (Thread-9): WARNING: Test 'test.SNOWFLAKE_SAMPLE_DATA.accepted_values_stg_jaffle_shop__orders_status__placed__shipped__completed__return_pending__returned' (models/project.yml) depends on model 'stg_jaffle_shop__orders' which was not found
+2021-06-10 07:11:28,989181 (Thread-10): handling status request
+2021-06-10 07:11:28,989614 (Thread-10): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9101f37c0>]}
+2021-06-10 07:11:29,13074 (Thread-10): sending response (<Response 9872 bytes [200 OK]>) to 10.0.4.151
+2021-06-10 07:11:29,17860 (Thread-11): handling status request
+2021-06-10 07:11:29,18193 (Thread-11): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9101f3ca0>]}
+2021-06-10 07:11:29,40890 (Thread-11): sending response (<Response 9872 bytes [200 OK]>) to 10.0.43.59
+2021-06-10 07:11:29,43519 (Thread-12): handling status request
+2021-06-10 07:11:29,43824 (Thread-12): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe91020cb20>]}
+2021-06-10 07:11:29,66969 (Thread-12): sending response (<Response 9872 bytes [200 OK]>) to 10.0.38.167
+2021-06-10 07:11:40,747225 (Thread-13): handling status request
+2021-06-10 07:11:40,747653 (Thread-13): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe91020cb20>]}
+2021-06-10 07:11:40,770562 (Thread-13): sending response (<Response 9872 bytes [200 OK]>) to 10.0.45.98
+2021-06-10 07:11:41,251523 (Thread-14): handling run_sql request
+2021-06-10 07:11:41,251963 (Thread-14): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe91b8addf0>]}
+2021-06-10 07:11:41,276904 (Thread-14): Connection 'test.SNOWFLAKE_SAMPLE_DATA.source_accepted_values_SNOWFLAKE_SAMPLE_DATA_orders_status__placed__shipped__completed__return_pending__returned' was properly closed.
+2021-06-10 07:11:41,277044 (Thread-14): Connection 'test.SNOWFLAKE_SAMPLE_DATA.source_accepted_values_SNOWFLAKE_SAMPLE_DATA_orders_status__placed__shipped__completed__return_pending__returned' was properly closed.
+2021-06-10 07:11:41,283179 (Thread-14): sending response (<Response 138 bytes [200 OK]>) to 10.0.17.221
+2021-06-10 07:11:41,294032 (Thread-14): Acquiring new snowflake connection "rpc.SNOWFLAKE_SAMPLE_DATA.request".
+2021-06-10 07:11:41,294607 (Thread-14): Opening a new connection, currently in state init
+2021-06-10 07:11:41,309033 (Thread-14): Found 3 models, 10 tests, 0 snapshots, 0 analyses, 127 macros, 0 operations, 0 seed files, 2 sources
+2021-06-10 07:11:41,310243 (Thread-15): Acquiring new snowflake connection "rpc.SNOWFLAKE_SAMPLE_DATA.request".
+2021-06-10 07:11:41,310351 (Thread-15): Opening a new connection, currently in state init
+2021-06-10 07:11:41,310467 (Thread-15): Compiling rpc.SNOWFLAKE_SAMPLE_DATA.request
+2021-06-10 07:11:41,323055 (Thread-15): finished collecting timing info
+2021-06-10 07:11:41,324157 (Thread-15): Using snowflake connection "rpc.SNOWFLAKE_SAMPLE_DATA.request".
+2021-06-10 07:11:41,324237 (Thread-15): On rpc.SNOWFLAKE_SAMPLE_DATA.request: /* {"app": "dbt", "dbt_version": "0.15.3", "profile_name": "user", "target_name": "default", "node_id": "rpc.SNOWFLAKE_SAMPLE_DATA.request"} */
+with customers as (
+
+    select * from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.stg_customers
+
+),
+
+orders as (
+
+    select * from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.stg_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+limit 500
+/* limit added automatically by dbt cloud */
+2021-06-10 07:11:41,862077 (Thread-15): handling poll request
+2021-06-10 07:11:41,862603 (Thread-15): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9112a7880>]}
+2021-06-10 07:11:41,941194 (Thread-15): sending response (<Response 4557 bytes [200 OK]>) to 10.0.17.221
+2021-06-10 07:11:42,95164 (Thread-15): Got an error when attempting to open a snowflake connection: '250003: Failed to get the response. Hanging? method: post, url: https://hc62267.us-central1.snowflakecomputing.com:443/session/v1/login-request?request_id=91e7dde3-b40b-4065-b527-98fb7d18b244&databaseName=SNOWFLAKE_SAMPLE_DATA&schemaName=TPCDS_SF100TCL&warehouse=COMPUTE_WH&roleName=SYSADMIN&request_guid=4f9361c1-54f6-4471-8953-e1180e217367'
+2021-06-10 07:11:42,95252 (Thread-15): Error running SQL: /* {"app": "dbt", "dbt_version": "0.15.3", "profile_name": "user", "target_name": "default", "node_id": "rpc.SNOWFLAKE_SAMPLE_DATA.request"} */
+with customers as (
+
+    select * from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.stg_customers
+
+),
+
+orders as (
+
+    select * from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.stg_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+limit 500
+/* limit added automatically by dbt cloud */
+2021-06-10 07:11:42,95299 (Thread-15): Rolling back transaction.
+2021-06-10 07:11:42,95360 (Thread-15): On rpc.SNOWFLAKE_SAMPLE_DATA.request: No close available on handle
+2021-06-10 07:11:42,95429 (Thread-15): finished collecting timing info
+2021-06-10 07:11:42,95823 (Thread-15): Got an exception: Database Error
+  250003: Failed to get the response. Hanging? method: post, url: https://hc62267.us-central1.snowflakecomputing.com:443/session/v1/login-request?request_id=91e7dde3-b40b-4065-b527-98fb7d18b244&databaseName=SNOWFLAKE_SAMPLE_DATA&schemaName=TPCDS_SF100TCL&warehouse=COMPUTE_WH&roleName=SYSADMIN&request_guid=4f9361c1-54f6-4471-8953-e1180e217367
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 192, in open
+    handle = snowflake.connector.connect(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/__init__.py", line 33, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/connection.py", line 187, in __init__
+    self.connect(**kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/connection.py", line 484, in connect
+    self.__open_connection()
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/connection.py", line 702, in __open_connection
+    self.__authenticate(auth_instance)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/connection.py", line 921, in __authenticate
+    self._session_parameters = auth.authenticate(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/auth.py", line 194, in authenticate
+    ret = self._rest._post_request(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/network.py", line 530, in _post_request
+    ret = self.fetch(u'post', full_url, headers, data=body,
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/network.py", line 610, in fetch
+    ret = self._request_exec_wrapper(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/network.py", line 714, in _request_exec_wrapper
+    raise e
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/network.py", line 655, in _request_exec_wrapper
+    self._handle_unknown_error(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/network.py", line 753, in _handle_unknown_error
+    Error.errorhandler_wrapper(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 100, in errorhandler_wrapper
+    connection.errorhandler(connection, cursor, errorclass, errorvalue)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 68, in default_errorhandler
+    raise errorclass(
+snowflake.connector.errors.OperationalError: 250003: Failed to get the response. Hanging? method: post, url: https://hc62267.us-central1.snowflakecomputing.com:443/session/v1/login-request?request_id=91e7dde3-b40b-4065-b527-98fb7d18b244&databaseName=SNOWFLAKE_SAMPLE_DATA&schemaName=TPCDS_SF100TCL&warehouse=COMPUTE_WH&roleName=SYSADMIN&request_guid=4f9361c1-54f6-4471-8953-e1180e217367
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/node_runners.py", line 218, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/node_runners.py", line 161, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/node_runners.py", line 260, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/node_runners.py", line 85, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 273, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 116, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 294, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 73, in add_query
+    cursor = connection.handle.cursor()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/contracts/connection.py", line 86, in handle
+    self._handle.resolve(self)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/contracts/connection.py", line 44, in resolve
+    return self.opener.open(connection)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 215, in open
+    raise FailedToConnectException(str(e))
+dbt.exceptions.FailedToConnectException: Database Error
+  250003: Failed to get the response. Hanging? method: post, url: https://hc62267.us-central1.snowflakecomputing.com:443/session/v1/login-request?request_id=91e7dde3-b40b-4065-b527-98fb7d18b244&databaseName=SNOWFLAKE_SAMPLE_DATA&schemaName=TPCDS_SF100TCL&warehouse=COMPUTE_WH&roleName=SYSADMIN&request_guid=4f9361c1-54f6-4471-8953-e1180e217367
+2021-06-10 07:11:42,97622 (Thread-15): Got exception RPCException(10003, Database Error, {'type': 'FailedToConnectException', 'message': 'Database Error in rpc request (from remote system)\n  250003: Failed to get the response. Hanging? method: post, url: https://hc62267.us-central1.snowflakecomputing.com:443/session/v1/login-request?request_id=91e7dde3-b40b-4065-b527-98fb7d18b244&databaseName=SNOWFLAKE_SAMPLE_DATA&schemaName=TPCDS_SF100TCL&warehouse=COMPUTE_WH&roleName=SYSADMIN&request_guid=4f9361c1-54f6-4471-8953-e1180e217367', 'raw_sql': "with customers as (\n\n    select * from {{ ref('stg_customers')}}\n\n),\n\norders as (\n\n    select * from {{ ref('stg_orders') }}\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': 'with customers as (\n\n    select * from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.stg_customers\n\n),\n\norders as (\n\n    select * from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.stg_orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 130, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/node_runners.py", line 231, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/node_runners.py", line 53, in error_result
+    raise error
+dbt.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'FailedToConnectException', 'message': 'Database Error in rpc request (from remote system)\n  250003: Failed to get the response. Hanging? method: post, url: https://hc62267.us-central1.snowflakecomputing.com:443/session/v1/login-request?request_id=91e7dde3-b40b-4065-b527-98fb7d18b244&databaseName=SNOWFLAKE_SAMPLE_DATA&schemaName=TPCDS_SF100TCL&warehouse=COMPUTE_WH&roleName=SYSADMIN&request_guid=4f9361c1-54f6-4471-8953-e1180e217367', 'raw_sql': "with customers as (\n\n    select * from {{ ref('stg_customers')}}\n\n),\n\norders as (\n\n    select * from {{ ref('stg_orders') }}\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': 'with customers as (\n\n    select * from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.stg_customers\n\n),\n\norders as (\n\n    select * from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.stg_orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+2021-06-10 07:11:43,393122 (Thread-16): handling poll request
+2021-06-10 07:11:43,393753 (Thread-16): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9112da1f0>]}
+2021-06-10 07:11:43,510775 (Thread-16): sending response (<Response 19821 bytes [200 OK]>) to 10.0.19.12
+2021-06-10 07:13:14,542307 (Thread-17): handling status request
+2021-06-10 07:13:14,544075 (Thread-17): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe910219580>]}
+2021-06-10 07:13:14,663051 (Thread-17): sending response (<Response 9872 bytes [200 OK]>) to 10.0.23.132
+2021-06-10 07:16:55,694357 (Thread-18): handling status request
+2021-06-10 07:16:55,696265 (Thread-18): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9102196a0>]}
+2021-06-10 07:16:55,810196 (Thread-18): sending response (<Response 9872 bytes [200 OK]>) to 10.0.44.224
+2021-06-10 07:18:05,69512 (Thread-19): handling status request
+2021-06-10 07:18:05,71910 (Thread-19): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe911296160>]}
+2021-06-10 07:18:05,186248 (Thread-19): sending response (<Response 9872 bytes [200 OK]>) to 10.0.28.149
+2021-06-10 07:19:52,452600 (Thread-20): handling status request
+2021-06-10 07:19:52,454189 (Thread-20): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9102033d0>]}
+2021-06-10 07:19:52,569199 (Thread-20): sending response (<Response 9872 bytes [200 OK]>) to 10.0.23.132
+2021-06-10 07:21:53,385077 (Thread-21): handling status request
+2021-06-10 07:21:53,387091 (Thread-21): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe91183e760>]}
+2021-06-10 07:21:53,503802 (Thread-21): sending response (<Response 9872 bytes [200 OK]>) to 10.0.37.247
+2021-06-10 07:21:58,561896 (Thread-22): handling status request
+2021-06-10 07:21:58,562405 (Thread-22): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9102039d0>]}
+2021-06-10 07:21:58,678625 (Thread-22): sending response (<Response 9872 bytes [200 OK]>) to 10.0.38.167
+2021-06-10 07:21:58,895638 (Thread-23): handling status request
+2021-06-10 07:21:58,896009 (Thread-23): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe910219f40>]}
+2021-06-10 07:21:59,10039 (Thread-23): sending response (<Response 9872 bytes [200 OK]>) to 10.0.0.54
+2021-06-10 07:21:59,362538 (Thread-24): handling cli_args request
+2021-06-10 07:21:59,362976 (Thread-24): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe91130a430>]}
+2021-06-10 07:21:59,490786 (Thread-24): sending response (<Response 138 bytes [200 OK]>) to 10.0.4.151
+2021-06-10 07:21:59,533838 (Thread-24): Found 3 models, 10 tests, 0 snapshots, 0 analyses, 127 macros, 0 operations, 0 seed files, 2 sources
+2021-06-10 07:21:59,541070 (Thread-24): 
+2021-06-10 07:21:59,542112 (Thread-24): Acquiring new snowflake connection "master".
+2021-06-10 07:21:59,542256 (Thread-24): Opening a new connection, currently in state init
+2021-06-10 07:21:59,608796 (Thread-24): Using snowflake connection "master".
+2021-06-10 07:21:59,608911 (Thread-24): On master: /* {"app": "dbt", "dbt_version": "0.15.3", "profile_name": "user", "target_name": "default", "connection_name": "master"} */
+
+    
+    select distinct schema_name
+    from SNOWFLAKE_SAMPLE_DATA.INFORMATION_SCHEMA.SCHEMATA
+    where catalog_name ilike 'SNOWFLAKE_SAMPLE_DATA'
+2021-06-10 07:22:00,145864 (Thread-25): handling poll request
+2021-06-10 07:22:00,146368 (Thread-25): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe910205bb0>]}
+2021-06-10 07:22:00,263243 (Thread-25): sending response (<Response 3007 bytes [200 OK]>) to 10.0.13.84
+2021-06-10 07:22:00,511454 (Thread-24): Got an error when attempting to open a snowflake connection: '250003: Failed to get the response. Hanging? method: post, url: https://hc62267.us-central1.snowflakecomputing.com:443/session/v1/login-request?request_id=9ee21cee-d06b-4b43-aa74-3684edf9b7c3&databaseName=SNOWFLAKE_SAMPLE_DATA&schemaName=TPCDS_SF100TCL&warehouse=COMPUTE_WH&roleName=SYSADMIN&request_guid=81bd751b-b297-4d72-901a-6d62af44e06e'
+2021-06-10 07:22:00,511549 (Thread-24): Error running SQL: /* {"app": "dbt", "dbt_version": "0.15.3", "profile_name": "user", "target_name": "default", "connection_name": "master"} */
+
+    
+    select distinct schema_name
+    from SNOWFLAKE_SAMPLE_DATA.INFORMATION_SCHEMA.SCHEMATA
+    where catalog_name ilike 'SNOWFLAKE_SAMPLE_DATA'
+2021-06-10 07:22:00,511599 (Thread-24): Rolling back transaction.
+2021-06-10 07:22:00,511671 (Thread-24): On master: No close available on handle
+2021-06-10 07:22:00,511948 (Thread-24): Connection 'master' was properly closed.
+2021-06-10 07:22:00,512020 (Thread-24): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 192, in open
+    handle = snowflake.connector.connect(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/__init__.py", line 33, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/connection.py", line 187, in __init__
+    self.connect(**kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/connection.py", line 484, in connect
+    self.__open_connection()
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/connection.py", line 702, in __open_connection
+    self.__authenticate(auth_instance)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/connection.py", line 921, in __authenticate
+    self._session_parameters = auth.authenticate(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/auth.py", line 194, in authenticate
+    ret = self._rest._post_request(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/network.py", line 530, in _post_request
+    ret = self.fetch(u'post', full_url, headers, data=body,
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/network.py", line 610, in fetch
+    ret = self._request_exec_wrapper(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/network.py", line 714, in _request_exec_wrapper
+    raise e
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/network.py", line 655, in _request_exec_wrapper
+    self._handle_unknown_error(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/network.py", line 753, in _handle_unknown_error
+    Error.errorhandler_wrapper(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 100, in errorhandler_wrapper
+    connection.errorhandler(connection, cursor, errorclass, errorvalue)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 68, in default_errorhandler
+    raise errorclass(
+snowflake.connector.errors.OperationalError: 250003: Failed to get the response. Hanging? method: post, url: https://hc62267.us-central1.snowflakecomputing.com:443/session/v1/login-request?request_id=9ee21cee-d06b-4b43-aa74-3684edf9b7c3&databaseName=SNOWFLAKE_SAMPLE_DATA&schemaName=TPCDS_SF100TCL&warehouse=COMPUTE_WH&roleName=SYSADMIN&request_guid=81bd751b-b297-4d72-901a-6d62af44e06e
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/task_handler.py", line 94, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/cli.py", line 83, in handle_request
+    return self.real_task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/project_commands.py", line 49, in handle_request
+    return self.run()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/runnable.py", line 315, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/runnable.py", line 280, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/run.py", line 176, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/runnable.py", line 347, in create_schemas
+    (db.lower(), s.lower()) for s in adapter.list_schemas(db))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/impl.py", line 231, in list_schemas
+    results = self.execute_macro(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 985, in execute_macro
+    result = macro_function(**kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 155, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 676, in macro
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 155, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 103, in macro
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 155, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 705, in macro
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 155, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 33, in macro
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 155, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 273, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 116, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 294, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 73, in add_query
+    cursor = connection.handle.cursor()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/contracts/connection.py", line 86, in handle
+    self._handle.resolve(self)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/contracts/connection.py", line 44, in resolve
+    return self.opener.open(connection)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 215, in open
+    raise FailedToConnectException(str(e))
+dbt.exceptions.FailedToConnectException: Database Error
+  250003: Failed to get the response. Hanging? method: post, url: https://hc62267.us-central1.snowflakecomputing.com:443/session/v1/login-request?request_id=9ee21cee-d06b-4b43-aa74-3684edf9b7c3&databaseName=SNOWFLAKE_SAMPLE_DATA&schemaName=TPCDS_SF100TCL&warehouse=COMPUTE_WH&roleName=SYSADMIN&request_guid=81bd751b-b297-4d72-901a-6d62af44e06e
+2021-06-10 07:22:01,708116 (Thread-26): handling poll request
+2021-06-10 07:22:01,708549 (Thread-26): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9112a7d00>]}
+2021-06-10 07:22:01,822180 (Thread-26): sending response (<Response 15044 bytes [200 OK]>) to 10.0.17.221
+2021-06-10 07:22:02,732122 (Thread-27): handling status request
+2021-06-10 07:22:02,732557 (Thread-27): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9102155e0>]}
+2021-06-10 07:22:02,734732 (Thread-28): handling status request
+2021-06-10 07:22:02,735108 (Thread-28): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9101edbb0>]}
+2021-06-10 07:22:02,783359 (Thread-29): handling status request
+2021-06-10 07:22:02,798982 (Thread-29): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe91020cb20>]}
+2021-06-10 07:22:02,855358 (Thread-27): sending response (<Response 9872 bytes [200 OK]>) to 10.0.3.2
+2021-06-10 07:22:02,970085 (Thread-28): sending response (<Response 9872 bytes [200 OK]>) to 10.0.44.140
+2021-06-10 07:22:03,85897 (Thread-29): sending response (<Response 9872 bytes [200 OK]>) to 10.0.9.249
+2021-06-10 07:30:50,166858 (Thread-30): handling status request
+2021-06-10 07:30:50,168728 (Thread-30): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9101edbb0>]}
+2021-06-10 07:30:50,283480 (Thread-30): sending response (<Response 9872 bytes [200 OK]>) to 10.0.44.224
+2021-06-10 09:06:34,830258 (Thread-31): handling status request
+2021-06-10 09:06:34,831919 (Thread-31): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9113f6a00>]}
+2021-06-10 09:06:34,946343 (Thread-31): sending response (<Response 9872 bytes [200 OK]>) to 10.0.0.54
+2021-06-10 09:07:02,315296 (Thread-32): handling status request
+2021-06-10 09:07:02,315740 (Thread-32): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe91126b4c0>]}
+2021-06-10 09:07:02,437040 (Thread-32): sending response (<Response 9872 bytes [200 OK]>) to 10.0.4.151
+2021-06-10 09:07:02,916382 (Thread-33): handling run_sql request
+2021-06-10 09:07:02,916822 (Thread-33): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe91126b9d0>]}
+2021-06-10 09:07:03,36403 (Thread-33): sending response (<Response 138 bytes [200 OK]>) to 10.0.28.159
+2021-06-10 09:07:03,49446 (Thread-33): Acquiring new snowflake connection "rpc.SNOWFLAKE_SAMPLE_DATA.request".
+2021-06-10 09:07:03,50062 (Thread-33): Opening a new connection, currently in state init
+2021-06-10 09:07:03,69820 (Thread-33): Found 3 models, 10 tests, 0 snapshots, 0 analyses, 127 macros, 0 operations, 0 seed files, 2 sources
+2021-06-10 09:07:03,71039 (Thread-34): Acquiring new snowflake connection "rpc.SNOWFLAKE_SAMPLE_DATA.request".
+2021-06-10 09:07:03,71128 (Thread-34): Opening a new connection, currently in state init
+2021-06-10 09:07:03,71231 (Thread-34): Compiling rpc.SNOWFLAKE_SAMPLE_DATA.request
+2021-06-10 09:07:03,84368 (Thread-34): finished collecting timing info
+2021-06-10 09:07:03,85499 (Thread-34): Using snowflake connection "rpc.SNOWFLAKE_SAMPLE_DATA.request".
+2021-06-10 09:07:03,85582 (Thread-34): On rpc.SNOWFLAKE_SAMPLE_DATA.request: /* {"app": "dbt", "dbt_version": "0.15.3", "profile_name": "user", "target_name": "default", "node_id": "rpc.SNOWFLAKE_SAMPLE_DATA.request"} */
+with customers as (
+
+    select * from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.stg_customers
+
+),
+
+orders as (
+
+    select * from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.stg_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+limit 500
+/* limit added automatically by dbt cloud */
+2021-06-10 09:07:03,492639 (Thread-34): handling poll request
+2021-06-10 09:07:03,493106 (Thread-34): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9101f2040>]}
+2021-06-10 09:07:03,518472 (Thread-34): sending response (<Response 4557 bytes [200 OK]>) to 10.0.44.140
+2021-06-10 09:07:03,945292 (Thread-34): Got an error when attempting to open a snowflake connection: '250003: Failed to get the response. Hanging? method: post, url: https://hc62267.us-central1.snowflakecomputing.com:443/session/v1/login-request?request_id=db8cb84c-03ee-418f-9977-9ee5dada20e2&databaseName=SNOWFLAKE_SAMPLE_DATA&schemaName=TPCDS_SF100TCL&warehouse=COMPUTE_WH&roleName=SYSADMIN&request_guid=32d38187-66be-4f63-880d-e60a666e8830'
+2021-06-10 09:07:03,945387 (Thread-34): Error running SQL: /* {"app": "dbt", "dbt_version": "0.15.3", "profile_name": "user", "target_name": "default", "node_id": "rpc.SNOWFLAKE_SAMPLE_DATA.request"} */
+with customers as (
+
+    select * from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.stg_customers
+
+),
+
+orders as (
+
+    select * from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.stg_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+limit 500
+/* limit added automatically by dbt cloud */
+2021-06-10 09:07:03,945434 (Thread-34): Rolling back transaction.
+2021-06-10 09:07:03,945501 (Thread-34): On rpc.SNOWFLAKE_SAMPLE_DATA.request: No close available on handle
+2021-06-10 09:07:03,945572 (Thread-34): finished collecting timing info
+2021-06-10 09:07:03,945983 (Thread-34): Got an exception: Database Error
+  250003: Failed to get the response. Hanging? method: post, url: https://hc62267.us-central1.snowflakecomputing.com:443/session/v1/login-request?request_id=db8cb84c-03ee-418f-9977-9ee5dada20e2&databaseName=SNOWFLAKE_SAMPLE_DATA&schemaName=TPCDS_SF100TCL&warehouse=COMPUTE_WH&roleName=SYSADMIN&request_guid=32d38187-66be-4f63-880d-e60a666e8830
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 192, in open
+    handle = snowflake.connector.connect(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/__init__.py", line 33, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/connection.py", line 187, in __init__
+    self.connect(**kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/connection.py", line 484, in connect
+    self.__open_connection()
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/connection.py", line 702, in __open_connection
+    self.__authenticate(auth_instance)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/connection.py", line 921, in __authenticate
+    self._session_parameters = auth.authenticate(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/auth.py", line 194, in authenticate
+    ret = self._rest._post_request(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/network.py", line 530, in _post_request
+    ret = self.fetch(u'post', full_url, headers, data=body,
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/network.py", line 610, in fetch
+    ret = self._request_exec_wrapper(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/network.py", line 714, in _request_exec_wrapper
+    raise e
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/network.py", line 655, in _request_exec_wrapper
+    self._handle_unknown_error(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/network.py", line 753, in _handle_unknown_error
+    Error.errorhandler_wrapper(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 100, in errorhandler_wrapper
+    connection.errorhandler(connection, cursor, errorclass, errorvalue)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 68, in default_errorhandler
+    raise errorclass(
+snowflake.connector.errors.OperationalError: 250003: Failed to get the response. Hanging? method: post, url: https://hc62267.us-central1.snowflakecomputing.com:443/session/v1/login-request?request_id=db8cb84c-03ee-418f-9977-9ee5dada20e2&databaseName=SNOWFLAKE_SAMPLE_DATA&schemaName=TPCDS_SF100TCL&warehouse=COMPUTE_WH&roleName=SYSADMIN&request_guid=32d38187-66be-4f63-880d-e60a666e8830
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/node_runners.py", line 218, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/node_runners.py", line 161, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/node_runners.py", line 260, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/node_runners.py", line 85, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 273, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 116, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 294, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 73, in add_query
+    cursor = connection.handle.cursor()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/contracts/connection.py", line 86, in handle
+    self._handle.resolve(self)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/contracts/connection.py", line 44, in resolve
+    return self.opener.open(connection)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 215, in open
+    raise FailedToConnectException(str(e))
+dbt.exceptions.FailedToConnectException: Database Error
+  250003: Failed to get the response. Hanging? method: post, url: https://hc62267.us-central1.snowflakecomputing.com:443/session/v1/login-request?request_id=db8cb84c-03ee-418f-9977-9ee5dada20e2&databaseName=SNOWFLAKE_SAMPLE_DATA&schemaName=TPCDS_SF100TCL&warehouse=COMPUTE_WH&roleName=SYSADMIN&request_guid=32d38187-66be-4f63-880d-e60a666e8830
+2021-06-10 09:07:03,948380 (Thread-34): Got exception RPCException(10003, Database Error, {'type': 'FailedToConnectException', 'message': 'Database Error in rpc request (from remote system)\n  250003: Failed to get the response. Hanging? method: post, url: https://hc62267.us-central1.snowflakecomputing.com:443/session/v1/login-request?request_id=db8cb84c-03ee-418f-9977-9ee5dada20e2&databaseName=SNOWFLAKE_SAMPLE_DATA&schemaName=TPCDS_SF100TCL&warehouse=COMPUTE_WH&roleName=SYSADMIN&request_guid=32d38187-66be-4f63-880d-e60a666e8830', 'raw_sql': "with customers as (\n\n    select * from {{ ref('stg_customers')}}\n\n),\n\norders as (\n\n    select * from {{ ref('stg_orders') }}\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': 'with customers as (\n\n    select * from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.stg_customers\n\n),\n\norders as (\n\n    select * from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.stg_orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 130, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/node_runners.py", line 231, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/node_runners.py", line 53, in error_result
+    raise error
+dbt.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'FailedToConnectException', 'message': 'Database Error in rpc request (from remote system)\n  250003: Failed to get the response. Hanging? method: post, url: https://hc62267.us-central1.snowflakecomputing.com:443/session/v1/login-request?request_id=db8cb84c-03ee-418f-9977-9ee5dada20e2&databaseName=SNOWFLAKE_SAMPLE_DATA&schemaName=TPCDS_SF100TCL&warehouse=COMPUTE_WH&roleName=SYSADMIN&request_guid=32d38187-66be-4f63-880d-e60a666e8830', 'raw_sql': "with customers as (\n\n    select * from {{ ref('stg_customers')}}\n\n),\n\norders as (\n\n    select * from {{ ref('stg_orders') }}\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': 'with customers as (\n\n    select * from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.stg_customers\n\n),\n\norders as (\n\n    select * from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.stg_orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+2021-06-10 09:07:04,996737 (Thread-35): handling poll request
+2021-06-10 09:07:04,997172 (Thread-35): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe911296160>]}
+2021-06-10 09:07:05,113532 (Thread-35): sending response (<Response 19821 bytes [200 OK]>) to 10.0.38.167
+2021-06-10 09:07:55,98820 (Thread-36): handling status request
+2021-06-10 09:07:55,99247 (Thread-36): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe911310ee0>]}
+2021-06-10 09:07:55,212055 (Thread-36): sending response (<Response 9872 bytes [200 OK]>) to 10.0.4.151
+2021-06-10 09:14:22,675202 (Thread-37): handling status request
+2021-06-10 09:14:22,676860 (Thread-37): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9101f39d0>]}
+2021-06-10 09:14:22,793284 (Thread-37): sending response (<Response 9872 bytes [200 OK]>) to 10.0.7.39
+2021-06-10 09:14:29,545832 (Thread-38): Got an acceptable cached parse result
+2021-06-10 09:14:29,611985 (Thread-38): WARNING: Found documentation for model "stg_jaffle_shop__orders" which was not found or is disabled
+2021-06-10 09:14:29,612315 (Thread-38): WARNING: Test 'test.SNOWFLAKE_SAMPLE_DATA.unique_stg_jaffle_shop__orders_order_id' (models/project.yml) depends on model 'stg_jaffle_shop__orders' which was not found
+2021-06-10 09:14:29,612623 (Thread-38): WARNING: Test 'test.SNOWFLAKE_SAMPLE_DATA.not_null_stg_jaffle_shop__orders_order_id' (models/project.yml) depends on model 'stg_jaffle_shop__orders' which was not found
+2021-06-10 09:14:29,612897 (Thread-38): WARNING: Test 'test.SNOWFLAKE_SAMPLE_DATA.accepted_values_stg_jaffle_shop__orders_status__placed__shipped__completed__return_pending__returned' (models/project.yml) depends on model 'stg_jaffle_shop__orders' which was not found
+2021-06-10 09:14:30,315608 (Thread-39): handling status request
+2021-06-10 09:14:30,316028 (Thread-39): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9112ec100>]}
+2021-06-10 09:14:30,382793 (Thread-40): handling status request
+2021-06-10 09:14:30,388436 (Thread-40): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9120b7070>]}
+2021-06-10 09:14:30,414660 (Thread-41): handling status request
+2021-06-10 09:14:30,420196 (Thread-41): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe912097970>]}
+2021-06-10 09:14:30,420938 (Thread-42): handling status request
+2021-06-10 09:14:30,431486 (Thread-42): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe91020c700>]}
+2021-06-10 09:14:30,476549 (Thread-39): sending response (<Response 2039 bytes [200 OK]>) to 10.0.17.221
+2021-06-10 09:14:30,589868 (Thread-40): sending response (<Response 2039 bytes [200 OK]>) to 10.0.28.149
+2021-06-10 09:14:30,703729 (Thread-41): sending response (<Response 2039 bytes [200 OK]>) to 10.0.9.249
+2021-06-10 09:14:30,822108 (Thread-42): sending response (<Response 2039 bytes [200 OK]>) to 10.0.0.54
+2021-06-10 09:14:34,792722 (Thread-43): Got an acceptable cached parse result
+2021-06-10 09:14:34,860966 (Thread-43): WARNING: Found documentation for model "stg_jaffle_shop__orders" which was not found or is disabled
+2021-06-10 09:14:34,861276 (Thread-43): WARNING: Test 'test.SNOWFLAKE_SAMPLE_DATA.unique_stg_jaffle_shop__orders_order_id' (models/project.yml) depends on model 'stg_jaffle_shop__orders' which was not found
+2021-06-10 09:14:34,861612 (Thread-43): WARNING: Test 'test.SNOWFLAKE_SAMPLE_DATA.not_null_stg_jaffle_shop__orders_order_id' (models/project.yml) depends on model 'stg_jaffle_shop__orders' which was not found
+2021-06-10 09:14:34,861907 (Thread-43): WARNING: Test 'test.SNOWFLAKE_SAMPLE_DATA.accepted_values_stg_jaffle_shop__orders_status__placed__shipped__completed__return_pending__returned' (models/project.yml) depends on model 'stg_jaffle_shop__orders' which was not found
+2021-06-10 09:14:35,596429 (Thread-44): handling status request
+2021-06-10 09:14:35,596929 (Thread-44): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9112630d0>]}
+2021-06-10 09:14:35,601349 (Thread-45): handling status request
+2021-06-10 09:14:35,601716 (Thread-45): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe911257d90>]}
+2021-06-10 09:14:35,638630 (Thread-46): handling status request
+2021-06-10 09:14:35,654288 (Thread-46): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe91124e8b0>]}
+2021-06-10 09:14:35,716221 (Thread-44): sending response (<Response 2039 bytes [200 OK]>) to 10.0.13.84
+2021-06-10 09:14:35,838617 (Thread-45): sending response (<Response 2039 bytes [200 OK]>) to 10.0.28.149
+2021-06-10 09:14:35,951091 (Thread-46): sending response (<Response 2039 bytes [200 OK]>) to 10.0.4.151
+2021-06-10 09:14:44,875598 (Thread-47): handling status request
+2021-06-10 09:14:44,876076 (Thread-47): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '7c2b1849-4c79-4960-ac25-56d8e16d41f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9101be4c0>]}
+2021-06-10 09:14:44,990555 (Thread-47): sending response (<Response 2039 bytes [200 OK]>) to 10.0.17.221
